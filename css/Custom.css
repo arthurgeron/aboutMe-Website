@@ -1,0 +1,160 @@
+/* Carousel Background */
+@media screen and (min-width: 768px){
+    #HomeDisplayImage{
+      background: url(../images/Animatedbg.gif) center center / cover no-repeat !important;
+    }
+}
+@media screen and (max-width: 767px){
+    #HomeDisplayImage{
+      background: url(../images/trinity.jpg) center center / cover no-repeat !important;
+    }
+}
+.carousel-caption{
+  /*font-family: "Ubuntu", sans-serif;*/
+  font-family: serif;
+  font-size: 4em;
+  font-weight: 600;
+  padding-bottom: initial;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/*End of Typed code */
+#myCarousel{
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container.marketing{
+  background-color: white;
+  /*margin-top: 500px;*/
+  z-index: 99 !important;
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-table;
+}
+@media only screen and (max-width: 1020px) and (min-width: 751px) {
+  .carousel-caption{
+    font-size: 2em;
+    padding-bottom:  100px;
+  }
+    .featurette-divider {
+    background-repeat: round !important;
+    }
+}
+@media only screen and (max-width: 750px) and (min-width: 551px) {
+  .carousel-caption{
+    font-size: 2em;
+    padding-bottom:  100px;
+  }
+  .featurette-divider {
+    background-repeat: round !important;
+    }
+}
+@media only screen and (max-width: 550px) and (min-width: 371px) {
+  .carousel-caption{
+    font-size: 2em;
+    padding-bottom:  100px;
+  }
+  .featurette-divider {
+    background-repeat: round !important;
+    }
+}
+@media only screen and (max-width: 370px) {
+  .carousel-caption{
+    font-size: 2em;
+    padding-bottom: 100px;
+  }
+  .featurette-divider {
+    background-repeat: round !important;
+    }
+}
+
+  #HomeDisplayImage {
+      background-size: cover !important;
+      /*-webkit-filter: blur(3px);*/
+  }
+  .techDivider{
+    width: 100%;
+    height: 20px;
+    background: center no-repeat url(../images/placeHolder.png) ;
+    background-size: cover;
+  }
+
+.Overlay {
+    background-color: black;
+    opacity: 0.8;
+    height: 100%;
+}
+
+.OverlayImage {
+    background-size: contain !important;
+    height: 80%;
+}
+
+
+.nonSticky {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    background-color: white;
+    /*color: #fff;*/
+    font-family: inherit;
+    transition: all 0.8s ease-in-out;
+}
+
+
+.sticky {
+    position: fixed;
+    margin-left: 15%;
+    top: 0%;
+    width: 40%;
+    height: 10%;
+    left: 20%;
+    background-color: white;
+    z-index: 2;
+    border-radius: 25px;
+    border-color: aqua;
+    border-style: ridge;
+    /*font-size: 24px;
+  line-height: 48px;
+  height: 48px;*/
+    /*text-align: left;*/
+    /*padding-left: 20px;*/
+}
+
+.featurette{
+    opacity: 0;
+    left:0;
+    right:0;
+
+}
+
+/*Custom logo class used to display small logos near to text*/
+.customLogos{
+    padding: 5px;
+    max-height: 70px;
+}
+
+
