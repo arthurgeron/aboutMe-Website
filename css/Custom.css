@@ -1,7 +1,16 @@
+/*Iframe */
+iframe {
+    width: 100%;
+    height: 100em;
+    border: none;
+}
 /* Carousel Background */
 @media screen and (min-width: 768px){
     #HomeDisplayImage{
       background: url(../images/Animatedbg.gif) center center / cover no-repeat !important;
+    }
+    iframe {
+      margin-left: 50%;
     }
 }
 @media screen and (max-width: 767px){
