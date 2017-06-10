@@ -2,18 +2,9 @@
 
 var app = angular.module('example', [
 		'ngSanitize',
-	  'ui.router',
-	  'angular-timeline',
+	 	  'angular-timeline',
 		'angular-scroll-animate'
 ]);
-
-app.config(function($stateProvider) {
-	  $stateProvider.state('user', {
-		      url:         '',
-		      controller: 'ExampleCtrl',
-		      templateUrl: 'angular-timeline.html'
-		    });
-});
 
 var ExampleCtrl = function($rootScope, $document, $timeout, $scope) {
 
