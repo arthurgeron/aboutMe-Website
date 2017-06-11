@@ -1,18 +1,12 @@
 'use strict';
 
-var app = angular.module('example', [
+var app = angular.module('timeline', [
 		'ngSanitize',
 	 	  'angular-timeline',
 		'angular-scroll-animate'
 ]);
 
-var ExampleCtrl = function($rootScope, $document, $timeout, $scope) {
-
-	var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. " +
-		          "Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor." +
-		          "Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, " +
-		          "ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor." +
-		          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+var ExperienceTimeline = function($rootScope, $document, $timeout, $scope) {
 
 	$scope.side = '';
 
@@ -101,4 +95,4 @@ var ExampleCtrl = function($rootScope, $document, $timeout, $scope) {
 	}
 };
 
-angular.module('example').controller('ExampleCtrl', ExampleCtrl);
+angular.module('timeline').controller('ExperienceTimeline', ExperienceTimeline);
