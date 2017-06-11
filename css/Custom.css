@@ -165,5 +165,11 @@ iframe {
     padding: 5px;
     max-height: 70px;
 }
+.customLogos.daitan{
+  height: 3em;
+}
+.customLogos.obelisco{
+  height: 1.5em;
+}
 
 
