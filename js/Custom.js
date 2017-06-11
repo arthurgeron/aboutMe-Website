@@ -102,35 +102,57 @@ $(window).scroll(function () {
 
         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
         var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-        /* If 98% of the object is visible in the window, fade it it */
-        if (bottom_of_window > bottom_of_object * 0.91) {
-
-            $(this).animate({
+        if($(this).hasClass("custom"))
+             $(this).animate({
                 'opacity': '1'
             }, 500);
+        else
+            /* If 98% of the object is visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object * 0.91) {
 
-            $(this).find('span').each(function () {
+                $(this).animate({
+                    'opacity': '1'
+                }, 500);
 
-                //Necessary for the animation to work
-                temp = $(this).text();
-                //Verifies if this string isn't or hasn't already been typed
-                if (temp !== "" && temp !== "|" && $(this).parent().find('.typed-cursor').length === 0) {
-                    //Empties field so we can animate it
-                    $(this).text("");
-                    //Animation magic
-                    $(this).typed({
-                        strings: [temp],
-                        contentType: 'html' // or 'text'
-                    });
-                    //Nobody likes a ton of cursors blinking all over the screen right?
-                    $(this).parent().parent().find('.typed-cursor').css("visibility", "hidden");
-                }
-            });
-        }
+                $(this).find('span').each(function () {
+
+                    //Necessary for the animation to work
+                    temp = $(this).text();
+                    //Verifies if this string isn't or hasn't already been typed
+                    if (temp !== "" && temp !== "|" && $(this).parent().find('.typed-cursor').length === 0) {
+                        //Empties field so we can animate it
+                        $(this).text("");
+                        //Animation magic
+                        $(this).typed({
+                            strings: [temp],
+                            contentType: 'html' // or 'text'
+                        });
+                        //Nobody likes a ton of cursors blinking all over the screen right?
+                        $(this).parent().parent().find('.typed-cursor').css("visibility", "hidden");
+                    }
+                });
+            }
     });
 });
 
+//Custom Typing animation for professional experience
+function animateProfExperienceText() {
+    var textContainer = $('#plaintext'); 
+    $(textContainer).find('span').each(function () {
+                //Necessary for the animation to work
+                temp = $(this).text();
+                //Verifies if this string isn't or hasn't already been typed
+                //Empties field so we can animate it
+                $(this).text("");
+                //Animation magic
+                $(this).typed({
+                    strings: [temp],
+                    contentType: 'html' // or 'text'
+                });
+                //Nobody likes a ton of cursors blinking all over the screen right?
+                $(this).parent().parent().find('.typed-cursor').css("visibility", "hidden");
+            });
+}
 //Remove elements that are ugly on mobile
 if (isMobile) {
     $('.col-md-5').each(function () {
