@@ -1,6 +1,12 @@
-/*Timeline */
 #timeline > div {
     width: 100%;
+}
+.timeline-img {
+    max-width: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    max-height: 10em;
 }
 /* Carousel Background */
 @media screen and (min-width: 768px){
