@@ -1,6 +1,9 @@
 var isMobile = false; //initiate as false
 $(TitleHover).hide();
-
+// IFrame
+function resizeIframe(obj) {
+	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
 $(".MainMenuHover").hover(function () {
     $(TitleHover).html($(this).html());
     $(TitleHover).stop();
