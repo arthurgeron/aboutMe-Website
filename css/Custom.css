@@ -6,7 +6,8 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    max-height: 10em;
+    min-height: 3em;
+    max-height: 7em;
 }
 /* Carousel Background */
 @media screen and (min-width: 768px){
