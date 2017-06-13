@@ -9,7 +9,17 @@
     min-height: 3em;
     max-height: 7em;
 }
-/* Carousel Background */
+.container.marketing{
+  background-color: white;
+  /*margin-top: 500px;*/
+  z-index: 99 !important;
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-table;
+}
+/* Carousel Background & 'Marketing' section */
 @media screen and (min-width: 768px){
     #HomeDisplayImage{
       background: url(../images/Animatedbg.gif) center center / cover no-repeat !important;
@@ -21,6 +31,13 @@
 @media screen and (max-width: 767px){
     #HomeDisplayImage{
       background: url(../images/trinity.jpg) center center / cover no-repeat !important;
+    }
+    .container.marketing {
+      margin-top: 120%;
+    }
+    .navbar.navbar-inverse.navbar-static-top {
+      position: fixed;
+      width: 100%;
     }
 }
 .carousel-caption{
@@ -58,16 +75,7 @@
   margin: 0;
   padding: 0;
 }
-.container.marketing{
-  background-color: white;
-  /*margin-top: 500px;*/
-  z-index: 99 !important;
-  overflow: visible;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: inline-table;
-}
+
 @media only screen and (max-width: 1020px) and (min-width: 751px) {
   .carousel-caption{
     font-size: 2em;
