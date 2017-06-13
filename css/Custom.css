@@ -18,6 +18,8 @@
   width: 100%;
   height: 100%;
   display: inline-table;
+  margin-top: 35.5em ;
+  
 }
 /* Carousel Background & 'Marketing' section */
 @media screen and (min-width: 768px){
@@ -27,18 +29,19 @@
     iframe {
       margin-left: 50%;
     }
+    #Overlay {
+      margin-top: 2em;
+    }
 }
 @media screen and (max-width: 767px){
     #HomeDisplayImage{
       background: url(../images/trinity.jpg) center center / cover no-repeat !important;
     }
-    .container.marketing {
-      margin-top: 120%;
-    }
     .navbar.navbar-inverse.navbar-static-top {
       position: fixed;
       width: 100%;
     }
+
 }
 .carousel-caption{
   /*font-family: "Ubuntu", sans-serif;*/
@@ -131,6 +134,7 @@
 }
 
 .OverlayImage {
+    background: url(../images/LogoArthur2.png) center center no-repeat !important;  
     background-size: contain !important;
     height: 80%;
 }

@@ -1,3 +1,16 @@
+//Pre-loads carousel animated background
+function LoadAnimatedBackground()
+{
+var img = new Image();
+img.src = "images/Animatedbg.gif";
+}
+//Pre-loads main logo
+function LoadLogo() {
+    var img = new Image();
+    img.src = "images/LogoArthur2.png";
+}
+LoadAnimatedBackground();
+LoadLogo();
 $(TitleHover).hide();
 $(".MainMenuHover").hover(function () {
     $(TitleHover).html($(this).html());
@@ -46,19 +59,6 @@ $("#PapersButton").click(function () {
         scrollTop: (parseInt($("#Papers").offset().top, 10) * 0.90)
     }, 500);
 });
-
-var img = new Image();
-img.src = "images/Animatedbg.gif";
-//Pre-loads main logo
-function LoadLogo() {
-    var img = new Image();
-
-    img.onload = function () {
-        $(".OverlayImage").css("background", "center no-repeat url(" + img.src + ")");
-    };
-    img.src = "images/LogoArthur2.png";
-}
-LoadLogo();
 
 $(window).scroll(function () {
 
@@ -127,15 +127,5 @@ $(document).ready(function () {
         });
     });
 });
-$(window).on('load', function () {
-    if ($(window).width() > 800)
-        $('.container.marketing').css('margin-top', $('.carousel.slide').height());
-    else
-        $('.container.marketing').css('margin-top', $('.carousel.slide').height());
-});
-
-
-//Fixing logo position(carousel slider)
-$(document).on('load', function () {
-    $('.carousel').height = (500 + $('.navbar-wrapper')[0].height) + 'px';
-});
+LoadLogo();
+LoadAnimatedBackground();
